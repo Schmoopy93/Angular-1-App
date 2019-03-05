@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head link rel="icon" href="data:,">
+    <title>GAIA REUNITED</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body ng-app="mainApp">
+
+    <ui-view name="navbar"></ui-view>
+
+    <section>
+        <div class="container position">
+            <ui-view></ui-view>
+        </div>
+    </section>
+
+    <footer class="footer-distributed">
+        <div class="footer-left" style="margin-bottom:20px; height: 20%">
+
+            <h3>Vegan</h3>
+
+            <p class="footer-links">
+                <a ui-sref="vegetables">
+                    <span class="glyphicon glyphicon-tree-deciduous"></span> Vegetables</a>
+                ·
+                <a ui-sref="fruits">
+                    <span class="glyphicon glyphicon-apple"></span> Fruits</a>
+                ·
+                <a ui-sref="who">
+                    <span class="glyphicon glyphicon-globe"></span> Welcome</a>
+            </p>
+
+            <p class="footer-company-name"> Gaia Reunited &copy; 2018</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>
+                    <span>Somewhere</span> Novi Sad, Srbija</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+381 69 123456</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p>
+                    <a href="mailto:support@gaiareunited.com">contact@gaiareunited.com</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="http://www.facebook.com">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="http://www.instagram.com">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="http://www.twitter.com">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="http://www.linkedin.com">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <script src="js/angularjs/angular.min.js"></script>
+    <script src="js/angularjs-ui-router/angular-ui-router.min.js"></script>
+    <script src="js/angularjs-file-upload/ng-file-upload-all.min.js"></script>
+
+    <script src="app/main.js"></script>
+    <script src="app/home/home.js"></script>
+    <script src="app/products/products.js"></script>
+    <script src="app/navbar/navbar.js"></script>
+    <script src="app/login/login.js"></script>
+    <script src="app/product/product.js"></script>
+    <script src="app/services/loginService.js"></script>
+    <script src="app/who/who.js"></script>
+    <script src="app/user_profile/user_profile.js"></script>
+    <script src="app/signup/register.js"></script>
+    <script src="app/makeproduct/makeproduct.js"></script>
+    <script src="app/calculator/calc.js"></script>
+    <script src="app/create_recipe//createRecipe.js"></script>
+
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<div class="container-show" ng-show="!pl.enableEdit">
+  <div class="row">
+    <div class="col-md-3"> </div>
+    <div class="col-md-6 hghlght">
+      <h1> {{pl.product.name}} </h1>
+    </div>
+    <div class="col-md-3"> </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{pl.product.path}}" alt="picture"> </div>
+    <div class="col-md-5">
+      <p class="ntrtinfo">{{pl.product.ntrtinfo}}</p>
+
+    </div>
+    <div class="col-md-3">
+      <div class="ntrsn">
+        <h3>Nutrition value
+          <span class="grms">per 100 g / procents</span>
+        </h3>
+        <table class="table table-bordered ">
+          <tr>
+            <td>Energy</td>
+            <td>{{pl.product.Energy}} Kcal</td>
+            <td>{{pl.product.EngPrcnt}} %</td>
+          </tr>
+          <tr>
+            <td>Carbohydrates</td>
+            <td>{{pl.product.Carbohydrates}}g</td>
+            <td>{{pl.product.CrbHydrtPrcnt}} %</td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td>{{pl.product.Protein}}g</td>
+            <td>{{pl.product.PrtPrcnt}} %</td>
+          </tr>
+          <tr>
+            <td>Total Fat</td>
+            <td>{{pl.product.TotalFat}}g</td>
+            <td>{{pl.product.TtlFtPrcnt}} %</td>
+          </tr>
+          <tr>
+            <td>Cholesterol</td>
+            <td>{{pl.product.Cholesterol}}mg</td>
+            <td>{{pl.product.chlstrlPrcnt}} %</td>
+          </tr>
+          <tr>
+            <td>Dietary Fiber</td>
+            <td>{{pl.product.DietaryFiber}}g</td>
+            <td>{{pl.product.dietryFbrPrcnt}} %</td>
+          </tr>
+        </table>
+        <div class="btn-group" style="padding-bottom:50px;">
+          <button class="btn btn-warning" value='Delete Post' title="Delete Post" ng-click="pl.remove(pl.product.idproduct)">
+            Delete
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
+          <button class="btn btn-warning" value='Edit Post' title="Edit Post" ng-click="pl.callforEdit()"> Edit
+            <span class="glyphicon glyphicon-pencil"></span>
+          </button>
+        </div>
+        <span class="vtm">
+          <div class="ntrttxt">{{pl.product.ntrttxt}}
+
+        </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container3" ng-show="pl.enableEdit">
+  <h1 class="post-create-header">Edit your Post</h1>
+  <form name="editproduct">
+    <div class="form-group">
+      <label for="title">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="name..." ng-model="pl.forEdit.name" required>
+      <i ng-show="forEdit.name.$error.required" style="color:red">*a name is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Energy</label>
+      <input class="form-control" id="content" name="content" placeholder="Energy..." ng-model="pl.forEdit.Energy" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a Energy percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Carbohydrates</label>
+      <input class="form-control" id="content" name="content" placeholder="Carbohydrates..." ng-model="pl.forEdit.Carbohydrates"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a Carbohydrates percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Protein</label>
+      <input class="form-control" id="content" name="content" placeholder="Protein..." ng-model="pl.forEdit.Protein" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a Protein percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">TotalFat</label>
+      <input class="form-control" id="content" name="content" placeholder="TotalFat..." ng-model="pl.forEdit.TotalFat" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a TotalFat percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Cholesterol</label>
+      <input class="form-control" id="content" name="content" placeholder="Cholesterol..." ng-model="pl.forEdit.Cholesterol"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a Cholesterol percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">DietaryFiber</label>
+      <input class="form-control" id="content" name="content" placeholder="DietaryFiber..." ng-model="pl.forEdit.DietaryFiber"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a DietaryFiber percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Price</label>
+      <input class="form-control" id="content" name="content" placeholder="Price..." ng-model="pl.forEdit.price" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a price is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">EngPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="EngPrcnt..." ng-model="pl.forEdit.EngPrcnt" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a EngPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">CrbHydrtPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="CrbHydrtPrcnt..." ng-model="pl.forEdit.CrbHydrtPrcnt"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a CrbHydrtPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">PrtPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="PrtPrcnt..." ng-model="pl.forEdit.PrtPrcnt" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a PrtPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">TtlFtPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="TtlFtPrcnt..." ng-model="pl.forEdit.TtlFtPrcnt" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a TtlFtPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">ChlstrlPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="chlstrlPrcnt..." ng-model="pl.forEdit.chlstrlPrcnt"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a chlstrlPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">DietryFbrPrcnt</label>
+      <input class="form-control" id="content" name="content" placeholder="dietryFbrPrcnt..." ng-model="pl.forEdit.dietryFbrPrcnt"
+        required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a DietryFbrPrcnt percentage is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Info</label>
+      <input class="form-control" id="content" name="content" placeholder="ntrttxt..." ng-model="pl.forEdit.ntrttxt" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a text is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Text</label>
+      <input class="form-control" id="content" name="content" placeholder="ntrtinfo..." ng-model="pl.forEdit.ntrtinfo" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a Info about stuff is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Path</label>
+      <input class="form-control" id="content" name="content" placeholder="path..." ng-model="pl.forEdit.path" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a new path is required</i>
+    </div>
+    <div class="form-group">
+      <label for="content">Type</label>
+      <input class="form-control" id="content" name="content" placeholder="type..." ng-model="pl.forEdit.type" required></input>
+      <i ng-show="forEdit.content.$error.required" style="color:red">*a type of stuff is required</i>
+    </div>
+    <div class="container-button">
+      <button class="btn btn-primary btn-md btn-block" type="submit" value="Edit" style="float:left;width:20%;background-color:yellow;color:green;" ng-click="pl.editPost()">Edit <span class="glyphicon glyphicon-pencil"></span> </button>
+      <button class="btn btn-primary btn-md btn-block" type="reset" value="Reset" style="float:right;width:20%;background-color: red;" ng-click="pl.cancelEdit()">Cancel <span class="glyphicon glyphicon-remove"></span> </button>
+    </div>
+  </form>
+</div>

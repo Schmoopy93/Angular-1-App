@@ -1,0 +1,25 @@
+TEXT for fruits
+
+1.The pear is a fresh fruit whose origins are dated back to Stone age. The very old origins of pears can be traced in the South-Eastern European and in the Western Asia. For this reason we can say that the pear is a typically Mediterranean fruit. Probably, men ate the fruits of the pear tree already 4000 years ago: anyway, more than 350 years b.C. the cultivation and the production of the pear was quite widespread in the Magna Graecia; Theophrastus, ancient Greek author, mentioned both the wild varieties of pears and the varieties cultivated by men.
+2.Prunes are the dried version of European plums. In the United States, through, you may not see the term "prunes" used as frequently as before, as this fruit items recently had its name officially changed to "dried plum." Sweet with a deep taste and a sticky chewy texture, prunes are not only fun to eat but they are also highly nutritious. As with other dried fruits, they are available year round. 
+3.Indigenous species of strawberries have been found in most of the world's arable landmasses, with notable exceptions including Australia; South America east of the Andes Mountains; the Middle East; and Africa (the Fragraria vesca strawberry species has been grown in the Middle East and northern Africa for a very long time and may also be native to those areas).
+
+TEXT for vegetables
+1.The potato was first domesticated in the region of modern-day southern Peru and extreme northwestern Bolivia between 8000 and 5000 BC. It has since spread around the world and become a staple crop in many countries. Following the Spanish conquest of the Inca Empire, the Spanish introduced the potato to Europe in the second half of the 16th century. The potato was slow to be adopted by distrustful European farmers, but soon enough it became an important food staple and field crop that played a major role in the European 19th century population boom. The English word potato comes from Spanish patata (the name used in Spain). The Spanish Royal Academy says the Spanish word is a compound of the Taíno batata and the Quechua papa (potato).
+2.The cucumber was first appeared in India 5000 BC. Since that moment over 4000 years ago ( 2000 BC ), cucumber was spread beyond Indian borders, moved through Ancient Greece, Rome, Europe, America and China. This journey was filed with golden periods when they were viewed as integral parts of many culture’s cuisines, and sometimes they were treated as bringers of disease. Roman Empire was the place where cucumbers were truly embraced by both nobility and lower classes. The ease of production and wide variety of types and tastes ensured that cucumbers remained popular in Italy for several centuries. In addition to eating, cucumbers were also widely used as a source of several medicinal remedies. The word "cucumber" comes from the Latin name "cucumis".
+3.Although cabbage has an extensive history, nonheading cabbages and kale were probably the first to be domesticated, before 1000 BC by the Celts of central and western Europe. Later on the Greeks and Romans claimed medicinal usages for their cabbage varieties that included relief from gout, headaches and the symptoms of poisonous mushroom ingestion. The antipathy towards the vine made it seem that eating cabbage would avoid drunkenness. Cabbage is probably form of Latin word caput-technical name for the head
+
+Info for vegetables
+1.Cabbage:Vitamins up to, most dominant are vitamin C and K 18%.
+2.Cucumber:Vitamins up to, most dominant is vitamin K 13.6%.
+3.Potato:Vitamins up to, most dominant is vitamin C.
+
+Info for fruits
+1.Plum:Vitamins up to, most dominant are vitamin C and A 11.5%.
+2.Pear:Vitamins up to, most dominant are vitamin A and C 11%.
+3.Strawberry:Most dominant is vitamin C 55%.
+
+Path for images:
+
+1) ../../media/images/fruits/plum.png (for example)
+2) ../../media/images/vegetables/cabbage.png(for example)

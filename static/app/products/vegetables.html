@@ -1,0 +1,34 @@
+<div class="row">
+     <div class="col-md-3" > </div>
+      <div class="col-md-6 hghlght"  >  <h1> Our beloved vegetables </h1> </div> 
+      <div class="col-md-3" > </div>
+</div>
+
+<div class="row">
+     <div class="col-md-12" > </br> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-xs-6 col-md-4" ng-repeat="veg in pc.vegetables"> 
+
+    <div class="row"> 
+      <div class="col-xs-4 col-md-4" > </div>
+      <div class="col-xs-4 col-md-4 vegname">  <span class="hello" ng-show="hello">{{veg.name}}</span> </div>
+      <div class="col-xs-4 col-md-4" > </div>
+    </div> <!-- row ::vegname end -->
+
+     <a ui-sref="product({id: veg.idproduct})"><img ng-mouseover="hello=true" ng-mouseleave="hello=false" class="card-img-top" ng-src={{veg.path}} data-holder-rendered="true"></a>
+
+      </div> <!-- col-md-4 ; ng-repeat="x in vegetables" end-->
+</div><!-- row end -->
+
+
+<div class="row">
+<div class="col-md-1" > </div>
+<div class="col-md-10 btmtxt"> <p> Vegetables are nature’s wonderful gift to the mankind... indeed, they are life-enhancing medicines packed with vitamins, minerals, anti-oxidants and many phyto-nutrients (Plant derived micronutrients). They are an absolute feast to our sight, not just because of their color and flavor. Vegetables are a must on a diet! </p> </div>
+<div class="col-md-1" > </div>
+</div>
+
+

@@ -1,0 +1,113 @@
+<div class="container2">
+    <h1 class="product-create-header">Make your product!</h1>
+    <form name="newproduct" ng-submit="pcc.appendProducts()">
+      <div class="form-group">
+        <label for="title">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="name..." ng-model="pcc.noviProduct.name" required>
+        <i ng-show="newproduct.name.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Energy</label>
+        <input class="form-control" id="content" name="content" placeholder="Energy..." ng-model="pcc.noviProduct.Energy" required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Carbohydrates</label>
+        <input class="form-control" id="content" name="content" placeholder="Carbohydrates..." ng-model="pcc.noviProduct.Carbohydrates"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Protein</label>
+        <input class="form-control" id="content" name="content" placeholder="Protein..." ng-model="pcc.noviProduct.Protein"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">TotalFat</label>
+        <input class="form-control" id="content" name="content" placeholder="TotalFat..." ng-model="pcc.noviProduct.TotalFat"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Cholesterol</label>
+        <input class="form-control" id="content" name="content" placeholder="Cholesterol..." ng-model="pcc.noviProduct.Cholesterol"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">DietaryFiber</label>
+        <input class="form-control" id="content" name="content" placeholder="DietaryFiber..." ng-model="pcc.noviProduct.DietaryFiber"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Price</label>
+        <input class="form-control" id="content" name="content" placeholder="Price..." ng-model="pcc.noviProduct.price"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">EngPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="EngPrcnt..." ng-model="pcc.noviProduct.EngPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">CrbHydrtPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="CrbHydrtPrcnt..." ng-model="pcc.noviProduct.CrbHydrtPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">PrtPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="PrtPrcnt..." ng-model="pcc.noviProduct.PrtPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">TtlFtPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="TtlFtPrcnt..." ng-model="pcc.noviProduct.TtlFtPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">ChlstrlPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="chlstrlPrcnt..." ng-model="pcc.noviProduct.chlstrlPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">DietryFbrPrcnt</label>
+        <input class="form-control" id="content" name="content" placeholder="dietryFbrPrcnt..." ng-model="pcc.noviProduct.dietryFbrPrcnt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Text</label>
+        <input class="form-control" id="content" name="content" placeholder="ntrttxt..." ng-model="pcc.noviProduct.ntrttxt"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Info</label>
+        <input class="form-control" id="content" name="content" placeholder="ntrtinfo..." ng-model="pcc.noviProduct.ntrtinfo"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Path</label>
+        <input class="form-control" id="content" name="content" placeholder="path..." ng-model="pcc.noviProduct.path"
+          required></input>
+        <i ng-show="newproduct.content.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Type</label>
+        <input class="form-control" id="content" name="content" placeholder="type..." ng-model="pcc.noviProduct.type"
+          required></input>
+        <i ng-show="newproduct.content.$error.required" style="color:red">All inputs are required !</i>
+      </div>
+      <button class="btn btn-warning" type="submit" style="float:left;width:20%;">Create <span class="glyphicon glyphicon-plus-sign"></span></button>
+      <button class="btn btn-warning" type="reset" value="Reset" style="float:right;width:20%;margin-bottom:50px;">Reset <span class="glyphicon glyphicon-remove"></span></button>
+    </form>
+  </div>

@@ -1,0 +1,19 @@
+<div class="container2">
+    <h1 class="product-create-header">Make your recipe!</h1>
+    <form name="newrecipe" ng-submit="rec.appendRecipe()">
+      <div class="form-group">
+        <label for="title">Name of Recipe: </label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name..." ng-model="rec.NoviRecipe.name" required>
+        <i ng-show="newrecipe.name.$error.required"></i>
+      </div>
+      <div class="form-group">
+        <label for="content">Description: </label>
+        <input class="form-control" id="content" name="content" placeholder="Description..." ng-model="rec.NoviRecipe.description" required></input>
+        <i ng-show="newrecipe.content.$error.required"></i>
+      </div>
+      <button class="btn btn-warning" type="submit" style="float:left;width:20%;">Create <span class="glyphicon glyphicon-plus-sign"></span></button>
+      <button class="btn btn-warning" type="reset" value="Reset" style="float:right;width:20%;margin-bottom:50px;">Reset <span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+
+    </form>
+  </div>

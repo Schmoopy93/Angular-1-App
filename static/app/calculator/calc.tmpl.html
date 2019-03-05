@@ -1,0 +1,70 @@
+<div id="maincontainer1" style="float:left;">  
+  
+  <div id="calulatorContainer">
+    <h1>Calorie Calculator</h1>
+    <div id="resultsSection">
+      <h3>Results (in kJ)</h3>
+      <div id="results">
+        <p>Your <a href="https://en.wikipedia.org/wiki/Basal_metabolic_rate" target="_blank">BMR</a> = {{bmr () | number:0}}</p>
+        <p>Required daily cals = {{cals () | number:0 }} </p>
+        <p>Daily Protein cals = {{proteinCals () | number:0}} </p>
+        <p>Daily Carbs cals = {{carbsCals ()| number:0}}</p>
+        <p>Daily Fat cals = {{fatCals ()| number:0}}</p>
+      </div>
+      <!--closing div for results-->
+    </div>
+    <!--closing div for results section-->
+      <div class="form-group">
+      <div class="form">
+        <input type="number" class="form-control" placeholder="Weight in Kgs" ng-model="weight">
+      </div>
+      <div class="form">
+        <input type="number" class="form-control" placeholder="Age" ng-model="age">
+      </div>
+      <div class="form">
+        <input type="number" class="form-control" placeholder="Height in cm" ng-model="height">
+      </div>
+      <div id="activity">
+        <!--the as in ng-options selects the current value in the dropdown and allows it to be stored in ng-model-->
+        <select class="form-control" ng-options="x as x.name for x in activities" ng-model="selectedActivity">
+          <option value="">Activity level...</option>
+        </select>
+      </div>
+      <!--closing div for activity dropdown-->
+      <div id="goal">
+        <select class="form-control" ng-options="x as x.name for x in goals" ng-model="selectedGoal">
+          <option value="">Your goal?</option>
+        </select>
+      </div>
+      <div id="gender">
+        <label class="radio-inline"><input type="radio" name="optradio" ng-model="gender" value="male">Male</label>
+        <label class="radio-inline"><input type="radio" name="optradio" ng-model="gender" value="female">Female</label>
+      </div>
+    </div>
+  </div>
+ </div>
+ 
+ <div id="mealContainer">
+    <h3>Meal Plan (in grams)</h3>
+      <div class="meal"><h5>Breakfast</h5>
+          <p>Protein:  {{breakfast[0].value() |number:0}}</p>
+          <p>Carbs:  {{breakfast[1].value()|number:0}}</p>
+          <p>Fat:  {{breakfast[2].value()|number:0}}</p>
+        </div>
+      <div class="meal"><h5>Snack</h5> 
+            <p>Protein: {{snack[0].value()|number:0}}</p>
+          <p>Carbs: {{snack[1].value()|number:0}}</p>
+          <p>Fat: {{snack[2].value()|number:0}}</p>
+        </div>
+      <div class="meal"><h5>Lunch</h5>
+          <p>Protein: {{mainMeal[0].value()|number:0}}</p>
+          <p>Carbs: {{mainMeal[1].value()|number:0}}</p>
+          <p>Fat: {{mainMeal[2].value()|number:0}}</p>
+        </div>
+      <div class="meal"><h5>Dinner</h5> 
+        <p>Protein: {{mainMeal[0].value()|number:0}}</p>
+        <p>Carbs: {{mainMeal[1].value()|number:0}}</p>
+        <p>Fat: {{mainMeal[2].value()|number:0}}</p>
+      </div>
+    </div>
+ 
